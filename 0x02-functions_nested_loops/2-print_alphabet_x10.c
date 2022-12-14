@@ -18,5 +18,6 @@ a++;
 }
 _putchar('\n');
 count++;
+a='a';
 }
 }

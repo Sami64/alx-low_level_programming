@@ -2,7 +2,7 @@
 
 /**
 * print_line - prints _
-* @n - integer for number of times
+* @n: integer for number of times
 * Return: 0
 */
 

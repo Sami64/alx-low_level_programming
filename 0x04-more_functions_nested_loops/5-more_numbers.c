@@ -21,5 +21,4 @@ _putchar(i % 10 + '0');
 count++;
 _putchar('\n');
 }
-_putchar('\n');
 }

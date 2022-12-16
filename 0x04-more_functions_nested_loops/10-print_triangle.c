@@ -20,7 +20,7 @@ for (i = 1; i <= size; i++)
 {
 for (j = 1; j <= size; j++)
 {
-if (j <= (size - 1))
+if (j <= (size - i))
 _putchar(' ');
 else
 _putchar('#');

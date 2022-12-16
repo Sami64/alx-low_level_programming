@@ -7,41 +7,18 @@
 */
 void print_number(int n)
 {
-short m; /* power of 10 */
-int c; /* boolean check */
-short num; /* convert int to long */
+unsigned int m;
 
-num = n;
-/* negatives */
-if (num < 0)
+if (n < 0)
 {
-num *= -1;
 _putchar('-');
-}
-
-/* count up */
-m = 1;
-c = 1;
-while (c)
-{
-if (num / (m * 10) > 0)
-m *= 10;
-else
-c = 0;
-}
-
-/* count down */
-while (num >= 0)
-{
-if (m == 1)
-{
-_putchar(num % 10 + '0');
-num = -1;
+m = -n;
 }
 else
 {
-_putchar((num / m % 10) + '0');
-m /= 10;
+m = n;
 }
-}
+if (m / 10 != 0)
+print_number(m /10);
+_putchar((m % 10) + '0');
 }

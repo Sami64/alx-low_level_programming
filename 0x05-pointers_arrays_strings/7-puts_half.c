@@ -22,8 +22,9 @@ j = i / 2;
 else
 {
 j = (i - 1) / 2;
-}
 j++;
+}
+
 while (j < i)
 {
 _putchar(str[j]);

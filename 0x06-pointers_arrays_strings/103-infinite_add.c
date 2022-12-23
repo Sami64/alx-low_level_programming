@@ -1,4 +1,5 @@
 #include <string.h>
+#include "main.h"
 
 /**
 * infinite_add - adds two numbers

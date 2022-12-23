@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -16,8 +17,10 @@ for (i = 0; i < size; i++)
 if (i % 10 == 0)
 printf("%08x: ", i);
 printf("%02x ", b[i]);
-if (i % 10 == 9)
-putchar(' ');
+if (isprint(b[i]))
+putchar(b[i]);
+else
+putchar('.');
 if (i % 20 == 19)
 putchar('\n');
 }

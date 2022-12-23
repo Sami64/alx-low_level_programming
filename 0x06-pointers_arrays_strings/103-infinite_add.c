@@ -15,7 +15,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 int i, j, k, carry, sum;
 int len1 = strlen(n1);
 int len2 = strlen(n2);
-int max_len = (len1 > len2) ? len1 : len2;
 
 for (i = 0; i < size_r; i++)
 r[i] = '0';

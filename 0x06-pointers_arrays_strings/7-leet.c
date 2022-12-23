@@ -12,15 +12,15 @@ int i;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-if (str[i] == 'a' || str[i] == 'A')
+if (str[i] == 97 || str[i] == 65)
 str[i] = '4';
-if (str[i] == 'e' || str[i] == 'E')
+if (str[i] == 101 || str[i] == 69)
 str[i] = '3';
-if (str[i] == 'o' || str[i] == 'O')
+if (str[i] == 111 || str[i] == 79)
 str[i] = '0';
-if (str[i] == 't' || str[i] == 'T')
+if (str[i] == 116 || str[i] == 84)
 str[i] = '7';
-if (str[i] == 'l' || str[i] == 'L')
+if (str[i] == 108 || str[i] == 76)
 str[i] = '1';
 }
 

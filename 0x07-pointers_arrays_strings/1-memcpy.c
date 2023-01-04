@@ -15,8 +15,8 @@ char *temp;
 temp = dest;
 while (n > 0)
 {
-*temp = *src;
-temp++;
+*dest = *src;
+dest++;
 src++;
 n--;
 }

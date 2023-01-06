@@ -30,6 +30,6 @@ return (-1);
 }
 else
 {
-return (sqrt(n, i + 1));
+return (_sqrt(n, i + 1));
 }
 }

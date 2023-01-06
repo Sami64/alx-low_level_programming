@@ -23,7 +23,8 @@ return (primer(n, 2));
 * Return: square root of x
 */
 
-int _root(int x, int i) {
+int _root(int x, int i)
+{
 if (i * i >= x)
 return (i);
 else

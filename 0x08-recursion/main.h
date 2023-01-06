@@ -9,3 +9,6 @@ int _sqrt(int n, int i);
 int primer(int n, int d);
 int _root(int x, int i);
 int is_prime_number(int n);
+int is_palindrome(char *s);
+int get_length(char *s);
+int check_palindrome(char *s, int length);

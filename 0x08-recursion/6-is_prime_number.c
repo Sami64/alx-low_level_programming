@@ -17,6 +17,20 @@ return (primer(n, 2));
 }
 
 /**
+* _root - return square root of number
+* @x: number
+* @i: number incrementer
+* Return: square root of x
+*/
+
+int _root(int x, int i) {
+if (i * i >= x)
+return (i);
+else
+return (_root(x, i + 1));
+}
+
+/**
 * primer - prime helper function
 * @n: integer
 * @d: number incrementer acting as divisor
@@ -27,7 +41,7 @@ int primer(int n, int d)
 {
 if (n % d == 0)
 return (0);
-else if (_sqrt(n, 1) < d)
+else if (_root(n, 1) < d)
 return (1);
 else
 return (primer(n, d + 1));

@@ -12,7 +12,7 @@ return (_sqrt(n, 1));
 }
 
 /**
-* sqrt - returns the natural square root of a number
+* _sqrt - returns the natural square root of a number
 * @n: integer
 * @i: integer
 * Return: 0

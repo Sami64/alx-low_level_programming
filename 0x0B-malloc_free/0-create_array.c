@@ -18,5 +18,14 @@ arr = malloc(size * sizeof(char));
 if (arr == NULL)
 return (NULL);
 else
-return arr;
+{
+unsigned int i = 0;
+while (size > 0)
+{
+arr[i] = c;
+i++;
+size--;
+}
+}
+return (arr);
 }

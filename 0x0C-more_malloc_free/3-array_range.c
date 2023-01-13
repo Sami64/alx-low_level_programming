@@ -18,7 +18,7 @@ return (NULL);
 
 c = max - min + 1;
 
-a = malloc(c * sizeof(*a));
+a = malloc(sizeof(*a) * c);
 if (a == NULL)
 return (NULL);
 

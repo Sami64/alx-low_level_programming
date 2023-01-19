@@ -13,6 +13,9 @@ va_list ap;
 unsigned int i;
 unsigned int sum = 0;
 
+if (n == 0)
+return (0);
+
 va_start(ap, n);
 for (i = 0; i < n; i++)
 sum = sum + va_arg(ap, int);

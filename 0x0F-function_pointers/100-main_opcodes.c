@@ -1,23 +1,35 @@
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* main - main function
+* @argc: argument count
+* @argv: string of arguments in array
+* Return: 0
+*/
+
 int main(int argc, char *argv[])
 {
+int index, nbytes;
+char *ptr = (char *) main;
+
 if (argc != 2)
 {
 printf("Error\n");
-return (1);
+exit(1);
 }
-int bytes = atoi(argv[1]);
-if (bytes < 0)
+nbytes = atoi(argv[1]);
+if (nbytes < 0)
 {
 printf("Error\n");
-return (2);
+exit(2);
 }
-unsigned char *main_ptr = (unsigned char *) main;
-for (int i = 0; i < bytes; i++)
+for (index = 0; index < nbytes; index++)
 {
-printf("%02x", main_ptr[i]);
+printf("%02x", ptr[index] & 0xFF);
+if (index != nbytes - 1)
+printf(" ");
 }
 printf("\n");
 return (0);

@@ -1,13 +1,13 @@
-#include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
-* print_list - prints all the elements of a list_t list
+* list_len - returns the number of elements in a linked list_t list
 * @h: pointer to list_t
 * Return: number of nodes
 */
 
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 const list_t *temp;
 size_t c;
@@ -19,13 +19,7 @@ return (0);
 
 while (temp != NULL)
 {
-if (temp->str == NULL)
-printf("[0] (nil)\n");
-else
-{
-printf("[%d] %s\n", temp->len, temp->str);
 temp = temp->next;
-}
 c++;
 }
 

@@ -20,12 +20,10 @@ return (0);
 while (temp != NULL)
 {
 if (temp->str == NULL)
-printf("[0] (nil)\n");
+printf("[%d] %s\n", 0, "(nil)");
 else
-{
 printf("[%d] %s\n", temp->len, temp->str);
 temp = temp->next;
-}
 c++;
 }
 

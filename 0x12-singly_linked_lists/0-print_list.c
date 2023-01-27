@@ -17,7 +17,7 @@ temp = h;
 if (h == NULL)
 return (0);
 
-while (temp != NULL)
+while (temp->next != NULL)
 {
 if (temp->str == NULL)
 printf("[%d] %s\n", 0, "(nil)");
@@ -26,6 +26,7 @@ printf("[%d] %s\n", temp->len, temp->str);
 temp = temp->next;
 c++;
 }
+printf("[%d] %s\n", temp->len, temp->str);
 
 return (c);
 }

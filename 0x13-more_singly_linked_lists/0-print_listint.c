@@ -13,7 +13,10 @@ const listint_t *temp;
 size_t nodes;
 
 for (temp = h, nodes = 0; temp != NULL; nodes++, temp = temp->next)
+{
 printf("%d", temp->n);
+printf("/n");
+}
 
 return (nodes);
 }

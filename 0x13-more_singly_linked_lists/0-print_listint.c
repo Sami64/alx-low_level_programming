@@ -9,14 +9,18 @@
 
 size_t print_listint(const listint_t *h)
 {
-const listint_t *temp;
 size_t nodes = 0;
 
-for (temp = h, nodes = 0; temp != NULL; nodes++, temp = temp->next)
+if (h == NULL)
+return (0);
+
+while (h->next != NULL)
 {
-printf("%d", temp->n);
-printf("/n");
+printf("%d", h->n);
+h = h->next;
+nodes++;
 }
+
 
 return (nodes);
 }

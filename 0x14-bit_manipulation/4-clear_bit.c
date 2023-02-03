@@ -16,7 +16,7 @@ unsigned int i;
 if (index > 64)
 return (-1);
 
-i = temp;
+i = index;
 for (temp = 1; i > 0; temp *= 2, i--)
 ;
 if ((*n >> index) & 1)

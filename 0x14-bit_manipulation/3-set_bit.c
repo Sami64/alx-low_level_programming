@@ -14,7 +14,7 @@ unsigned long int temp;
 if (index > 64)
 return (-1);
 
-for (temp = 1; temp > 0; temp--, temp *= 2)
+for (temp = 1; index > 0; index--, temp *= 2)
 ;
 *n *= temp;
 
